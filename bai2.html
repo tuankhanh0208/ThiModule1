@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function kiemTraBangNhau(tuSo1, mauSo1, tuSo2, mauSo2) {
+            return tuSo1 * mauSo2 === tuSo2 * mauSo1;
+        }
+        function main() {
+            let tuSo1 = parseInt(prompt("Nhập tử số của phân số thứ nhất:"));
+            let mauSo1 = parseInt(prompt("Nhập mẫu số của phân số thứ nhất:"));
+            let tuSo2 = parseInt(prompt("Nhập tử số của phân số thứ hai:"));
+            let mauSo2 = parseInt(prompt("Nhập mẫu số của phân số thứ hai:"));
+            if (kiemTraBangNhau(tuSo1, mauSo1, tuSo2, mauSo2)) {
+                console.log("Hai phân số bằng nhau.");
+            } else {
+                console.log("Hai phân số không bằng nhau.");
+            }
+        }
+        main();
+    </script>
+</body>
+
+</html>

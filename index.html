@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../ThiModule1/bai3.css">
+
+<body>
+    <h1>Savings Account Management</h1> <br>
+    <label for="maSo">Mã số:</label>
+    <input type="text" id="maSo" maxlength="5"><br>
+
+    <label for="loaiTietKiem">Loại tiết kiệm:</label>
+    <input type="text" id="loaiTietKiem" maxlength="10"><br>
+
+    <label for="hoTenKhachHang">Họ tên khách hàng:</label>
+    <input type="text" id="hoTenKhachHang" maxlength="30"><br>
+
+    <label for="cmnd">CMND:</label>
+    <input type="text" id="cmnd"><br>
+
+    <label for="ngayMoSo">Ngày mở sổ:</label>
+    <input type="date" id="ngayMoSo"><br>
+
+    <label for="soTienGui">Số tiền gửi:</label>
+    <input type="number" id="soTienGui"><br>
+
+    <button type="submit" onclick="add()" class="btn">Thêm sổ tiết kiệm</button>
+
+    <h2>Danh sách sổ tiết kiệm</h2>
+    <table border="1" id="table-money">
+    </table>
+
+    <script src="../ThiModule1/SOTIETKIEM.JS"></script>
+</body>
+
+</html>
